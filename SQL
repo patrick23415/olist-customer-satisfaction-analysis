@@ -1,0 +1,35 @@
+## SQL Analysis
+
+This folder contains SQL queries used to analyze the Brazilian E-commerce dataset and answer key business questions related to customer satisfaction, delivery performance, and sales behavior.
+
+### Objective
+
+The goal of this analysis is to identify the main drivers of customer satisfaction by examining delivery performance, pricing, product categories, and customer behavior.
+
+### Analyses
+
+1. **Delivery Performance vs Customer Reviews**
+   Analyzes how delivery timing (on-time vs late) relates to customer satisfaction by comparing average review scores across delivery status groups.
+   → `01_delivery_vs_reviews.sql`
+
+2. **Order Value and Shipping Cost vs Review Scores**
+   Examines how total order value and shipping costs vary across review scores to identify whether higher-priced orders are associated with lower satisfaction.
+   → `02_order_value_vs_reviews.sql`
+
+3. **Combined Impact of Delivery Timing and Order Value**
+   Evaluates how delivery performance and order value together influence customer satisfaction, highlighting how late deliveries disproportionately affect high-value orders.
+   → `03_delivery_and_price_impact.sql`
+
+4. **Product Category Performance Analysis**
+   Analyzes order volume, total revenue, and average review scores by product category to identify high-performing and underperforming segments.
+   → `04_category_performance.sql`
+
+5. **Customer Loyalty and Review Behavior**
+   Compares review patterns between one-time and repeat customers to assess whether returning customers exhibit higher satisfaction levels.
+   → `05_repeat_customers_vs_reviews.sql`
+
+### Notes
+
+* Each SQL file is organized by business question.
+* Queries include comments explaining key steps such as joins, aggregations, and calculated fields.
+* The analysis focuses on identifying relationships rather than establishing causation.
