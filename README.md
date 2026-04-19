@@ -1,104 +1,117 @@
 # 📊 Customer Satisfaction Drivers in E-Commerce (Olist Dataset)
 
 ## 🎯 Objective
-The goal of this project was to identify the key drivers of customer satisfaction in an e-commerce business, focusing on delivery performance, order value, and product categories.
+
+Analyze the key factors influencing customer satisfaction in an e-commerce environment, with a focus on delivery performance, order value, and product categories.
 
 ---
+## 📊 Dashboard Overview
+<img width="1169" height="732" alt="dashboard_overview" src="https://github.com/user-attachments/assets/8a5d2f60-4ffb-46cb-9988-20db3fda242a" />
+
 
 ## 📦 Dataset
-Brazilian E-Commerce Public Dataset (Olist)
 
-Includes multiple tables:
-- Orders
-- Order Items
-- Reviews
-- Products
-- Customers
-- Payments
-- Category Translation
+**Brazilian E-Commerce Public Dataset (Olist)**
+
+Includes:
+
+* Orders
+* Order Items
+* Reviews
+* Products
+* Customers
+* Payments
+* Category Translation
 
 ---
 
 ## 🧠 Approach
 
 ### 🔹 SQL Analysis
-- Joined multiple tables to analyze relationships between delivery performance, pricing, and customer reviews
-- Aggregated item-level data to order-level metrics (total order value)
-- Performed multi-variable analysis (delivery status + price category)
-- Identified category-level performance (revenue vs satisfaction)
+
+* Joined multiple tables to analyze relationships between delivery performance, pricing, and customer reviews
+* Aggregated item-level data to order-level metrics (e.g., total order value)
+* Performed multi-variable analysis (delivery status + price category)
+* Evaluated product category performance (revenue vs satisfaction)
 
 ---
 
 ### 🔹 Python (Pandas)
-- Cleaned and transformed data (handled nulls, converted date types)
-- Engineered key features:
-  - `delivery_delay_days`
-  - `is_late`
-  - `order_total`
-- Merged multiple datasets to create a unified analytical dataset
-- Used `groupby()` and aggregations to replicate and extend SQL insights
-- Created price segments using `qcut()`
+
+* Cleaned and transformed data (date conversion, feature engineering)
+* Created key features:
+
+  * `delivery_delay_days`
+  * `is_late`
+  * `order_total`
+* Merged datasets into a unified analytical dataset
+* Replicated and extended SQL insights using `groupby()` and aggregations
+* Created price segments using `qcut()`
 
 ---
 
 ### 🔹 Power BI Dashboard
-- Built interactive dashboard with:
-  - KPI overview (Revenue, Orders, Ratings, Late %)
-  - Delivery impact analysis
-  - Price vs satisfaction analysis
-  - Category-level performance (revenue + rating)
-- Added slicers for Delivery Status and Product Category
+
+* Built an interactive dashboard including:
+
+  * KPI overview (Revenue, Orders, Ratings, Late %)
+  * Delivery performance analysis
+  * Order value vs satisfaction
+  * Product category performance
+* Added filters for Delivery Status and Product Category
 
 ---
 
 ## 🔍 Key Insights
 
-- Late deliveries significantly reduce customer satisfaction (~4.2 → ~2.3)
-- Order value has minimal impact on satisfaction independently
-- High-value orders delivered late receive the lowest ratings (~2.2)
-- Some high-revenue categories (e.g., furniture, home goods) have lower satisfaction (~3.9)
+* Late deliveries significantly reduce customer satisfaction (~4.2 → ~2.3)
+* Order value alone has limited impact on review scores
+* Late deliveries have the strongest negative impact on high-value orders
+* Some high-revenue categories show lower customer satisfaction
 
 ---
 
 ## 💡 Business Recommendations
 
-1. **Improve Delivery Performance**
-   - Prioritize reducing late deliveries, especially for high-value orders
-   - Delivery delays are the primary driver of customer dissatisfaction
+### Improve Delivery Performance
 
-2. **Prioritize High-Value Orders**
-   - Implement priority shipping or alerts for premium purchases
-   - High-value customers show greater sensitivity to delays
+* Reduce late deliveries, especially for high-value orders
+* Delivery delays are the primary driver of dissatisfaction
 
-3. **Optimize Underperforming Categories**
-   - Focus improvements on high-revenue, low-satisfaction categories
-   - Investigate product quality, packaging, or logistics issues
+### Prioritize High-Value Orders
 
-4. **Reduce Shipping Cost Friction**
-   - Higher costs correlate with lower reviews
-   - Consider free shipping thresholds or cost transparency
+* Implement priority shipping or monitoring for expensive orders
+* High-value customers are more sensitive to delays
+
+### Optimize Underperforming Categories
+
+* Investigate high-revenue, low-satisfaction categories
+* Focus on product quality, packaging, and logistics
+
+### Reduce Shipping Cost Friction
+
+* Improve transparency or introduce incentives (e.g., free shipping thresholds)
 
 ---
 
 ## 📈 Business Impact
 
-Improving delivery performance could significantly increase customer satisfaction and retention, particularly among high-value customers. Even small reductions in late deliveries may lead to disproportionately higher review scores and improved customer experience.
-
----
-
-## 🚀 Next Steps
-
-- Analyze customer lifetime value (CLV)
-- Incorporate delivery distance/logistics data
-- Build predictive model for customer satisfaction
-- Perform cohort or segmentation analysis
+Improving delivery performance can significantly increase customer satisfaction and retention, particularly among high-value customers.
 
 ---
 
 ## 🛠️ Tools Used
 
-- SQL (data extraction & analysis)
-- Python (pandas, data cleaning & transformation)
-- Power BI (data visualization & dashboarding)
+* SQL
+* Python (Pandas)
+* Power BI
 
 ---
+## 📁 Project Structure
+
+- `sql/` – SQL queries for analysis  
+- `python/` – Data cleaning and analysis (Pandas)  
+- `powerbi/` – Dashboard and visualization  
+- `README.md` – Project overview  
+
+
