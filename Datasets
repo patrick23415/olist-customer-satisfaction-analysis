@@ -1,0 +1,10 @@
+## 📁 Data
+
+Due to file size limitations, the dataset is not included in this repository.
+
+The analysis is based on the Brazilian Olist E-commerce dataset, which is publicly available.
+
+All data cleaning, transformation, and feature engineering steps are documented in the Python script.
+
+Dataset source:
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
