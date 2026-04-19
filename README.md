@@ -1,5 +1,10 @@
 # 📊 Customer Satisfaction Drivers in E-Commerce (Olist Dataset)
 
+## 🔗 Full Project Walkthrough
+
+For a detailed breakdown of the analysis and visuals, view the full portfolio here:  
+https://www.notion.so/Patrick-Chowthi-Projects-Portfolio-2835e23c5f9980b68b7fc920f1e61d11
+
 ## 🎯 Objective
 
 Analyze the key factors influencing customer satisfaction in an e-commerce environment, with a focus on delivery performance, order value, and product categories.
